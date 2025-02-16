@@ -1,3 +1,5 @@
+using WebApplication1.Functions;
+
 namespace WebApplication1
 {
     public class Program
@@ -29,6 +31,8 @@ namespace WebApplication1
             app.MapRazorPages();
 
             app.Run();
+
+            LogReader.ReadLogs();
         }
     }
 }
